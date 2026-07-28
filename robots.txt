@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jolopami.github.io/nido-web/sitemap.xml
+Sitemap: https://jolopami.github.io/mimbra-web/sitemap.xml

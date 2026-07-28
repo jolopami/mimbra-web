@@ -3,49 +3,57 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Nido es una aplicación de escritorio para Windows que importa, organiza y explica tus finanzas personales de forma sencilla, privada y local.">
+    <meta name="description" content="Mimbra te ayuda a descubrir en qué se va tu dinero sin conectar tu banco. Importa tus extractos, ordénalos en minutos y conserva todos los datos en tu ordenador.">
     <meta name="theme-color" content="#1f5142">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Nido — El hogar de tus finanzas">
-    <meta property="og:description" content="Importa, categoriza y comprende tus movimientos sin enviar tus datos financieros a servidores.">
-    <meta property="og:url" content="https://jolopami.github.io/nido-web/">
-    <meta property="og:image" content="https://jolopami.github.io/nido-web/assets/nido-logo.png">
-    <link rel="canonical" href="https://jolopami.github.io/nido-web/">
-    <link rel="icon" href="assets/nido-icono.png" type="image/png">
+    <meta property="og:title" content="Mimbra — Tus finanzas, recogidas y en casa">
+    <meta property="og:description" content="Importa tus extractos bancarios, organiza tus movimientos y entiende tu dinero sin enviarlo a servidores.">
+    <meta property="og:url" content="https://jolopami.github.io/mimbra-web/">
+    <meta property="og:image" content="https://jolopami.github.io/mimbra-web/assets/mimbra-social.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mimbra — Tus finanzas, recogidas y en casa">
+    <meta name="twitter:description" content="Importa tus extractos bancarios, organiza tus movimientos y entiende tu dinero sin enviarlo a servidores.">
+    <meta name="twitter:image" content="https://jolopami.github.io/mimbra-web/assets/mimbra-social.png">
+    <link rel="canonical" href="https://jolopami.github.io/mimbra-web/">
+    <link rel="icon" href="assets/mimbra-icono.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
-    <title>Nido — El hogar de tus finanzas</title>
+    <title>Mimbra — Tus finanzas, recogidas y en casa</title>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#inicio" aria-label="Ir al inicio de Nido">
-        <img src="assets/nido-logo.png" alt="Nido, el hogar de tus finanzas">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio de Mimbra">
+        <img src="assets/mimbra-icono.png" alt="">
+        <span>
+          <strong>Mimbra</strong>
+          <small>Tus finanzas, recogidas y en casa</small>
+        </span>
       </a>
       <nav aria-label="Navegación principal">
-        <a href="#funciones">Funciones</a>
         <a href="#como-funciona">Cómo funciona</a>
+        <a href="#compatibilidad">Compatibilidad</a>
         <a href="#privacidad">Privacidad</a>
-        <a href="#disponibilidad">Disponibilidad</a>
+        <a class="nav-cta" href="#lista-espera">Avísame cuando salga</a>
       </nav>
     </header>
 
     <main>
       <section class="hero" id="inicio">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> Aplicación de escritorio para Windows</p>
-          <h1>Tus finanzas,<br><em>claras y en casa.</em></h1>
-          <p class="hero-lead">Nido transforma los extractos de tu banco en una visión sencilla de tus ingresos, gastos y ahorro. Sin cuentas complejas, sin conectar el banco y sin enviar tus movimientos a servidores.</p>
+          <p class="eyebrow"><span></span> Finanzas personales para Windows</p>
+          <h1>Descubre en qué se va <em>tu dinero.</em></h1>
+          <p class="hero-lead">Importa el extracto de tu banco, ordénalo en minutos y entiende tus ingresos, gastos y ahorro. Sin conectar tu cuenta y manteniendo tus datos financieros en tu ordenador.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#funciones">Conocer Nido</a>
-            <a class="button button-secondary" href="privacidad.html">Cómo cuidamos tus datos</a>
+            <a class="button button-primary" href="#lista-espera">Avísame cuando salga</a>
+            <a class="button button-secondary" href="#como-funciona">Ver cómo funciona</a>
           </div>
           <ul class="quick-facts" aria-label="Características destacadas">
             <li>Windows 10 y 11</li>
             <li>Pago único</li>
-            <li>Datos locales</li>
+            <li>Sin conexión bancaria</li>
           </ul>
         </div>
 
-        <div class="product-preview" aria-label="Ejemplo ilustrativo de un resumen mensual">
+        <div class="product-preview" aria-label="Ejemplo ilustrativo del resumen mensual de Mimbra">
           <div class="preview-window">
             <div class="window-bar">
               <span></span><span></span><span></span>
@@ -57,7 +65,7 @@
                   <small>Mayo de 2026</small>
                   <h2>Tu mes, de un vistazo</h2>
                 </div>
-                <div class="nest-mark">N</div>
+                <div class="nest-mark" aria-label="Mimbra">M</div>
               </div>
               <div class="summary-grid">
                 <article>
@@ -83,67 +91,127 @@
               </div>
             </div>
           </div>
-          <p class="sample-note">Datos de ejemplo · Ninguna información financiera sale de tu equipo</p>
+          <p class="sample-note">Datos de ejemplo · Ningún movimiento financiero sale de tu equipo</p>
         </div>
       </section>
 
-      <section class="trust-strip" aria-label="Principios de Nido">
-        <p><strong>Simple</strong><span>Lo necesario para entender tu dinero.</span></p>
-        <p><strong>Privado</strong><span>Tus movimientos permanecen en tu ordenador.</span></p>
-        <p><strong>Constante</strong><span>Un sistema cómodo para mantener en el tiempo.</span></p>
+      <section class="trust-strip" aria-label="Principios de Mimbra">
+        <p><strong>No conectas el banco</strong><span>Tú eliges el archivo que quieres importar.</span></p>
+        <p><strong>Todo permanece local</strong><span>Tus movimientos se guardan en tu ordenador.</span></p>
+        <p><strong>Revisas antes de guardar</strong><span>Nada se incorpora sin tu confirmación.</span></p>
       </section>
 
-      <section class="section features" id="funciones">
-        <div class="section-heading">
-          <p class="eyebrow">Todo lo importante</p>
-          <h2>Control financiero sin convertirlo en otro trabajo</h2>
-          <p>Nido reduce la fricción entre descargar un extracto y comprender realmente qué ha ocurrido durante el mes.</p>
+      <section class="section problem">
+        <div class="problem-copy">
+          <p class="eyebrow">Menos hojas de cálculo, más claridad</p>
+          <h2>Tu banco guarda movimientos. Mimbra te ayuda a entenderlos.</h2>
         </div>
-        <div class="feature-grid">
-          <article>
-            <span class="feature-number">01</span>
-            <h3>Importa distintos bancos</h3>
-            <p>Lee archivos CSV y Excel, reconoce columnas habituales y te permite corregir la correspondencia antes de guardar nada.</p>
-          </article>
-          <article>
-            <span class="feature-number">02</span>
-            <h3>Revisa antes de confirmar</h3>
-            <p>Edita movimientos, excluye filas, detecta duplicados y muestra únicamente las operaciones nuevas si quieres ir más rápido.</p>
-          </article>
-          <article>
-            <span class="feature-number">03</span>
-            <h3>Enseña tus categorías</h3>
-            <p>Crea reglas con palabras reconocibles del concepto. Se aplican al importar y las categorías elegidas manualmente permanecen protegidas.</p>
-          </article>
-          <article>
-            <span class="feature-number">04</span>
-            <h3>Entiende el resultado</h3>
-            <p>Consulta ingresos, gasto neto, ahorro y comparaciones con meses anteriores. Filtra por fechas, importes y varias categorías cuando necesites más detalle.</p>
-          </article>
-          <article>
-            <span class="feature-number">05</span>
-            <h3>Trata bien los reembolsos</h3>
-            <p>Una devolución reduce el gasto que compensa y sus reglas pueden recordar la categoría afectada; no infla artificialmente tus ingresos.</p>
-          </article>
-          <article>
-            <span class="feature-number">06</span>
-            <h3>Conserva el control</h3>
-            <p>Personaliza conceptos repetidos, exporta resultados filtrados y guarda copias completas para restaurar o trasladar tus datos cuando lo necesites.</p>
-          </article>
+        <div class="problem-points">
+          <p>Los extractos llegan con conceptos confusos, formatos distintos y demasiadas filas para revisarlas una por una.</p>
+          <p>Mimbra reconoce la estructura, te deja corregirla y convierte cada movimiento en una imagen clara de tu mes.</p>
         </div>
       </section>
 
       <section class="section steps" id="como-funciona">
         <div class="section-heading compact">
           <p class="eyebrow">Cómo funciona</p>
-          <h2>Del extracto bancario a una visión clara</h2>
+          <h2>Del extracto bancario a una visión clara en cuatro pasos</h2>
         </div>
         <ol>
-          <li><span>1</span><div><h3>Descarga tu archivo</h3><p>Exporta los movimientos desde la web o la aplicación de tu banco.</p></div></li>
-          <li><span>2</span><div><h3>Revísalos en Nido</h3><p>Comprueba fechas, conceptos e importes antes de incorporarlos.</p></div></li>
-          <li><span>3</span><div><h3>Clasifica a tu manera</h3><p>Usa categorías sencillas y guarda reglas para movimientos similares.</p></div></li>
-          <li><span>4</span><div><h3>Mira el conjunto</h3><p>Comprende el mes y compáralo con tu comportamiento reciente.</p></div></li>
+          <li><span>1</span><div><h3>Descarga tu extracto</h3><p>Exporta los movimientos desde la web o la aplicación de tu banco.</p></div></li>
+          <li><span>2</span><div><h3>Impórtalo en Mimbra</h3><p>La aplicación reconoce las columnas habituales y te deja corregirlas.</p></div></li>
+          <li><span>3</span><div><h3>Revisa y clasifica</h3><p>Edita, excluye duplicados y crea reglas para movimientos similares.</p></div></li>
+          <li><span>4</span><div><h3>Entiende tu mes</h3><p>Consulta ingresos, gasto neto, ahorro y comparaciones recientes.</p></div></li>
         </ol>
+      </section>
+
+      <section class="section demo" aria-labelledby="demo-title">
+        <div class="demo-card">
+          <div class="demo-copy">
+            <p class="eyebrow light">Una vuelta rápida por Mimbra</p>
+            <h2 id="demo-title">De un archivo del banco a un mes ordenado</h2>
+            <p>La demo mostrará el recorrido real: importar, comprobar columnas, revisar movimientos, categorizar y ver el resumen.</p>
+            <span class="demo-status">Demo de 60 segundos en preparación</span>
+          </div>
+          <div class="demo-storyboard" aria-label="Pasos que aparecerán en la demostración">
+            <span><b>01</b> Importar</span>
+            <span><b>02</b> Revisar</span>
+            <span><b>03</b> Categorizar</span>
+            <span><b>04</b> Comprender</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section features" id="funciones">
+        <div class="section-heading">
+          <p class="eyebrow">Lo necesario para mantener el hábito</p>
+          <h2>Control financiero sin convertirlo en otro trabajo</h2>
+          <p>Mimbra reduce la fricción entre descargar un extracto y comprender realmente qué ha ocurrido durante el mes.</p>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <span class="feature-number">01</span>
+            <h3>Revisa antes de confirmar</h3>
+            <p>Edita movimientos, excluye filas, invierte signos y comprueba la correspondencia de columnas antes de guardar nada.</p>
+          </article>
+          <article>
+            <span class="feature-number">02</span>
+            <h3>Evita duplicados</h3>
+            <p>Detecta movimientos repetidos y muestra únicamente las operaciones nuevas cuando vuelves a importar un extracto.</p>
+          </article>
+          <article>
+            <span class="feature-number">03</span>
+            <h3>Enseña tus categorías</h3>
+            <p>Crea reglas con palabras reconocibles. Mimbra las aplica al importar y respeta tus decisiones manuales.</p>
+          </article>
+          <article>
+            <span class="feature-number">04</span>
+            <h3>Entiende el resultado</h3>
+            <p>Consulta ingresos, gasto neto, ahorro y comparaciones con los meses anteriores.</p>
+          </article>
+          <article>
+            <span class="feature-number">05</span>
+            <h3>Trata bien los reembolsos</h3>
+            <p>Una devolución reduce el gasto que compensa y no infla artificialmente tus ingresos.</p>
+          </article>
+          <article>
+            <span class="feature-number">06</span>
+            <h3>Conserva el control</h3>
+            <p>Exporta resultados y guarda copias completas para restaurar o trasladar tus datos cuando lo necesites.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section compatibility" id="compatibilidad">
+        <div class="section-heading">
+          <p class="eyebrow">Compatibilidad sin letra pequeña</p>
+          <h2>Probado con extractos bancarios reales</h2>
+          <p>Mimbra ya se ha utilizado con archivos de cuatro bancos españoles. La importación flexible permite trabajar también con otros formatos habituales.</p>
+        </div>
+        <div class="bank-list" aria-label="Bancos probados">
+          <span>Openbank <small>probado</small></span>
+          <span>BBVA <small>probado</small></span>
+          <span>SelfBank <small>probado</small></span>
+          <span>WiZink <small>probado</small></span>
+        </div>
+        <div class="compatibility-grid">
+          <article>
+            <h3>Archivos aceptados</h3>
+            <p>CSV, TSV, TXT, XLS, XLSX, XLSM, XLSB, ODS y tablas HTML exportadas por el banco.</p>
+          </article>
+          <article>
+            <h3>Si el archivo viene raro</h3>
+            <p>Puedes indicar manualmente las columnas de fecha, concepto, importe, cargos y abonos, además de editar las filas antes de importar.</p>
+          </article>
+          <article>
+            <h3>Sistema necesario</h3>
+            <p>Windows 10 u 11 de 64 bits. El instalador comercial se publicará para Windows x64.</p>
+          </article>
+          <article>
+            <h3>Conexión a Internet</h3>
+            <p>Solo se necesita para activar y comprobar periódicamente la licencia. Una activación guardada permite seguir usando Mimbra sin conexión.</p>
+          </article>
+        </div>
       </section>
 
       <section class="section privacy" id="privacidad">
@@ -151,7 +219,7 @@
           <div>
             <p class="eyebrow light">Privacidad desde el diseño</p>
             <h2>Tu información financiera se queda contigo</h2>
-            <p>Nido procesa los extractos y guarda los movimientos localmente en la aplicación. No necesita conectarse a tu banco, no consulta tus cuentas y no utiliza tus datos para publicidad.</p>
+            <p>Mimbra procesa los extractos y guarda los movimientos localmente. No se conecta a tu banco, no consulta tus cuentas y no utiliza tus datos para publicidad.</p>
             <a href="privacidad.html">Leer el compromiso de privacidad <span>→</span></a>
           </div>
           <ul>
@@ -162,21 +230,115 @@
         </div>
       </section>
 
-      <section class="section availability" id="disponibilidad">
-        <div>
-          <p class="eyebrow">Disponibilidad</p>
-          <h2>Nido 1.0.0 está listo para su lanzamiento</h2>
-          <p>La aplicación funciona en Windows 10 y Windows 11 de 64 bits. La edición comercial se distribuirá mediante un pago único e incluirá una licencia personal para utilizar Nido hasta en dos equipos. La compra se abrirá cuando finalice la aprobación de la tienda.</p>
+      <section class="section offer" id="oferta">
+        <div class="offer-card">
+          <div>
+            <p class="eyebrow">Oferta de lanzamiento</p>
+            <h2>Una aplicación tuya, no otra suscripción</h2>
+            <p>Pago único para utilizar Mimbra hasta en dos ordenadores, con las actualizaciones incluidas durante toda la versión 1.x.</p>
+          </div>
+          <div class="price">
+            <span>Lanzamiento</span>
+            <strong>29 €</strong>
+            <small>Después, 39 € · Pago único</small>
+            <p>30 días de garantía de devolución</p>
+          </div>
         </div>
-        <span class="status-pill">Próximamente · Windows x64</span>
+      </section>
+
+      <section class="section faq" id="preguntas">
+        <div class="section-heading compact">
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2>Lo que conviene saber antes de importar tu primer extracto</h2>
+        </div>
+        <div class="faq-grid">
+          <details>
+            <summary>¿Tengo que conectar mi cuenta bancaria?</summary>
+            <p>No. Descargas el extracto desde tu banco y eliges el archivo que quieres abrir en Mimbra.</p>
+          </details>
+          <details>
+            <summary>¿Mimbra sube mis movimientos a Internet?</summary>
+            <p>No. Los extractos, movimientos, categorías, reglas y copias de seguridad se procesan y almacenan localmente.</p>
+          </details>
+          <details>
+            <summary>¿Qué pasa si Mimbra no reconoce las columnas?</summary>
+            <p>Puedes indicar manualmente dónde están la fecha, el concepto y los importes, y revisar el resultado antes de confirmar.</p>
+          </details>
+          <details>
+            <summary>¿Podré usarlo en más de un equipo?</summary>
+            <p>Sí. La licencia personal prevista permite activar Mimbra en hasta dos ordenadores.</p>
+          </details>
+          <details>
+            <summary>¿Y si Mimbra no encaja conmigo?</summary>
+            <p>Tendrás 30 días desde la compra para probarla y solicitar la devolución si no es para ti.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section waitlist" id="lista-espera">
+        <div class="waitlist-card">
+          <div>
+            <p class="eyebrow light">Próximamente para Windows</p>
+            <h2>Entérate cuando Mimbra esté disponible</h2>
+            <p>La aplicación está terminada y esperando la aprobación de la tienda. Déjanos tu nombre y tu correo para avisarte cuando se abra la compra.</p>
+          </div>
+          <form id="waitlist-form" action="https://mimbra-finance.lemonsqueezy.com/email-subscribe/external" method="post" aria-label="Lista de espera de Mimbra">
+            <label>
+              Nombre
+              <input type="text" name="name" autocomplete="name" placeholder="Tu nombre" required>
+            </label>
+            <label>
+              Correo electrónico
+              <input type="email" name="email" autocomplete="email" placeholder="tu@correo.com" required>
+            </label>
+            <label class="consent">
+              <input type="checkbox" required>
+              <span>Quiero recibir el aviso de lanzamiento y he leído la <a href="privacidad.html">política de privacidad</a>.</span>
+            </label>
+            <button class="button button-gold" type="submit">Avísame cuando salga</button>
+            <p class="form-note">Solo utilizaremos tu correo para informarte del lanzamiento. Sin publicidad ni movimientos financieros.</p>
+            <p class="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
       </section>
     </main>
 
     <footer>
-      <img src="assets/nido-icono.png" alt="" width="48" height="48">
-      <div><strong>Nido</strong><span>El hogar de tus finanzas</span></div>
-      <p>© 2026 Nido · Aplicación de finanzas personales para Windows</p>
+      <img src="assets/mimbra-icono.png" alt="" width="52" height="52">
+      <div><strong>Mimbra</strong><span>Tus finanzas, recogidas y en casa</span></div>
+      <p>© 2026 Mimbra · Aplicación de finanzas personales para Windows</p>
       <a href="privacidad.html">Privacidad</a>
     </footer>
+
+    <script>
+      document.querySelector("#waitlist-form").addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const form = event.currentTarget;
+        const button = form.querySelector("button");
+        const feedback = form.querySelector(".form-feedback");
+        const originalLabel = button.textContent;
+
+        button.disabled = true;
+        button.textContent = "Apuntándote…";
+        feedback.textContent = "";
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: new FormData(form)
+          });
+
+          if (!response.ok) throw new Error("No se pudo completar la suscripción");
+
+          form.reset();
+          feedback.textContent = "¡Listo! Te avisaremos cuando Mimbra esté disponible.";
+        } catch (error) {
+          feedback.textContent = "No hemos podido apuntarte. Inténtalo de nuevo dentro de unos minutos.";
+        } finally {
+          button.disabled = false;
+          button.textContent = originalLabel;
+        }
+      });
+    </script>
   </body>
 </html>
