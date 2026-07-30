@@ -32,7 +32,7 @@
         <a href="#como-funciona">Cómo funciona</a>
         <a href="#compatibilidad">Compatibilidad</a>
         <a href="#privacidad">Privacidad</a>
-        <a class="nav-cta" href="#lista-espera">Avísame cuando salga</a>
+        <a class="nav-cta" href="#lanzamiento">Próximamente</a>
       </nav>
     </header>
 
@@ -43,7 +43,7 @@
           <h1>Descubre en qué se va <em>tu dinero.</em></h1>
           <p class="hero-lead">Importa el extracto de tu banco, ordénalo en minutos y entiende tus ingresos, gastos y ahorro. Sin conectar tu cuenta y manteniendo tus datos financieros en tu ordenador.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#lista-espera">Avísame cuando salga</a>
+            <a class="button button-primary" href="#lanzamiento">Próximamente para Windows</a>
             <a class="button button-secondary" href="#como-funciona">Ver cómo funciona</a>
           </div>
           <ul class="quick-facts" aria-label="Características destacadas">
@@ -275,30 +275,24 @@
         </div>
       </section>
 
-      <section class="section waitlist" id="lista-espera">
+      <section class="section waitlist" id="lanzamiento">
         <div class="waitlist-card">
           <div>
             <p class="eyebrow light">Próximamente para Windows</p>
-            <h2>Entérate cuando Mimbra esté disponible</h2>
-            <p>La aplicación está terminada y esperando la aprobación de la tienda. Déjanos tu nombre y tu correo para avisarte cuando se abra la compra.</p>
+            <h2>Mimbra estará disponible próximamente</h2>
+            <p>La aplicación está terminada y estamos completando el proceso de publicación. Cuando la compra esté disponible, esta página mostrará todos los detalles del lanzamiento.</p>
           </div>
-          <form id="waitlist-form" action="https://mimbra-finance.lemonsqueezy.com/email-subscribe/external" method="post" aria-label="Lista de espera de Mimbra">
-            <label>
-              Nombre
-              <input type="text" name="name" autocomplete="name" placeholder="Tu nombre" required>
-            </label>
-            <label>
-              Correo electrónico
-              <input type="email" name="email" autocomplete="email" placeholder="tu@correo.com" required>
-            </label>
-            <label class="consent">
-              <input type="checkbox" required>
-              <span>Quiero recibir el aviso de lanzamiento y he leído la <a href="privacidad.html">política de privacidad</a>.</span>
-            </label>
-            <button class="button button-gold" type="submit">Avísame cuando salga</button>
-            <p class="form-note">Solo utilizaremos tu correo para informarte del lanzamiento. Sin publicidad ni movimientos financieros.</p>
-            <p class="form-feedback" role="status" aria-live="polite"></p>
-          </form>
+          <div class="launch-status">
+            <span class="launch-pill">Preparando el lanzamiento</span>
+            <h3>La versión para Windows está lista</h3>
+            <p>Estamos ultimando la publicación para ofrecer una compra y una instalación claras desde el primer día.</p>
+            <ul>
+              <li>Windows 10 y 11 de 64 bits</li>
+              <li>Pago único y uso en dos equipos</li>
+              <li>30 días de garantía de devolución</li>
+            </ul>
+            <a class="button button-gold" href="#compatibilidad">Consultar compatibilidad</a>
+          </div>
         </div>
       </section>
     </main>
@@ -310,35 +304,5 @@
       <a href="privacidad.html">Privacidad</a>
     </footer>
 
-    <script>
-      document.querySelector("#waitlist-form").addEventListener("submit", async (event) => {
-        event.preventDefault();
-        const form = event.currentTarget;
-        const button = form.querySelector("button");
-        const feedback = form.querySelector(".form-feedback");
-        const originalLabel = button.textContent;
-
-        button.disabled = true;
-        button.textContent = "Apuntándote…";
-        feedback.textContent = "";
-
-        try {
-          const response = await fetch(form.action, {
-            method: "POST",
-            body: new FormData(form)
-          });
-
-          if (!response.ok) throw new Error("No se pudo completar la suscripción");
-
-          form.reset();
-          feedback.textContent = "¡Listo! Te avisaremos cuando Mimbra esté disponible.";
-        } catch (error) {
-          feedback.textContent = "No hemos podido apuntarte. Inténtalo de nuevo dentro de unos minutos.";
-        } finally {
-          button.disabled = false;
-          button.textContent = originalLabel;
-        }
-      });
-    </script>
   </body>
 </html>
