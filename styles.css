@@ -376,51 +376,36 @@ img { display: block; max-width: 100%; }
   letter-spacing: -.045em;
 }
 .waitlist-card > div > p:not(.eyebrow) { color: #c9d6d1; }
-.waitlist form {
+.launch-status {
   padding: 25px;
   border: 1px solid rgba(255,255,255,.14);
   border-radius: 21px;
   background: rgba(255,255,255,.07);
 }
-.waitlist label {
-  display: block;
-  color: #dbe6e1;
-  font-size: .8rem;
-  font-weight: 800;
+.launch-pill {
+  display: inline-flex;
+  padding: 7px 11px;
+  border: 1px solid rgba(243,214,150,.3);
+  border-radius: 999px;
+  color: #f3d696;
+  background: rgba(224,178,87,.1);
+  font-size: .72rem;
+  font-weight: 850;
+  letter-spacing: .08em;
+  text-transform: uppercase;
 }
-.waitlist label + label { margin-top: 13px; }
-.waitlist input {
-  width: 100%;
-  min-height: 51px;
-  margin-top: 6px;
-  padding: 0 14px;
-  border: 1px solid rgba(255,255,255,.18);
-  border-radius: 12px;
-  color: var(--ink);
-  background: var(--white);
-  font: inherit;
+.launch-status h3 { margin: 20px 0 8px; color: var(--white); font-size: 1.35rem; }
+.launch-status p { margin: 0; color: #c9d6d1; }
+.launch-status ul { margin: 22px 0 0; padding: 0; list-style: none; }
+.launch-status li {
+  position: relative;
+  padding: 9px 0 9px 25px;
+  border-top: 1px solid rgba(255,255,255,.1);
+  color: #e2ebe7;
+  font-size: .85rem;
+  font-weight: 700;
 }
-.waitlist input:focus {
-  outline: 3px solid rgba(224,178,87,.35);
-  border-color: #e0b257;
-}
-.waitlist .consent {
-  margin-top: 15px;
-  display: flex;
-  align-items: flex-start;
-  gap: 9px;
-  color: #c9d6d1;
-  font-weight: 600;
-  line-height: 1.45;
-}
-.waitlist .consent input {
-  width: 17px;
-  min-height: 17px;
-  margin: 2px 0 0;
-  flex: 0 0 auto;
-  accent-color: #e0b257;
-}
-.waitlist .consent a { color: #f3d696; }
+.launch-status li::before { content: "✓"; position: absolute; left: 0; color: #f3d696; }
 .button-gold {
   width: 100%;
   margin-top: 16px;
@@ -429,9 +414,6 @@ img { display: block; max-width: 100%; }
   background: #e0b257;
   cursor: pointer;
 }
-.button-gold:disabled { cursor: wait; opacity: .72; transform: none; }
-.form-note, .form-feedback { margin: 12px 0 0; color: #aebfba; font-size: .74rem; }
-.form-feedback { color: #f3d696; font-weight: 750; }
 
 footer { width: min(calc(100% - 48px), var(--max)); min-height: 130px; margin: 0 auto; display: grid; grid-template-columns: auto auto 1fr auto; align-items: center; gap: 14px; border-top: 1px solid var(--line); }
 footer > img { border-radius: 14px; mix-blend-mode: multiply; object-fit: cover; }
