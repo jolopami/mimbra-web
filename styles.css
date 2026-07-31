@@ -427,6 +427,9 @@ footer a { color: var(--forest-800); font-weight: 800; text-decoration: none; }
 .legal-intro { color: var(--muted); font-size: 1.15rem; }
 .legal-content h2 { margin: 40px 0 8px; color: var(--forest-800); font-size: 1.25rem; }
 .legal-content p { color: var(--muted); }
+.legal-content li { margin: 10px 0; color: var(--muted); }
+.legal-content a { color: var(--forest-700); font-weight: 700; }
+.legal-content .checksum { overflow-wrap: anywhere; padding: 16px 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--cream-100); font-family: Consolas, "Courier New", monospace; font-size: .9rem; }
 .legal-content .updated { margin-top: 52px; padding-top: 22px; border-top: 1px solid var(--line); font-size: .86rem; }
 
 @media (max-width: 1020px) {
