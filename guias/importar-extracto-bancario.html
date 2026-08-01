@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Aprende cómo importar un extracto bancario en CSV o Excel: qué archivo descargar, qué columnas revisar y cómo evitar duplicados.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#1f5142">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Mimbra">
+    <meta property="og:title" content="Cómo importar un extracto bancario en CSV o Excel">
+    <meta property="og:description" content="Una guía paso a paso para descargar, revisar e importar movimientos bancarios con seguridad.">
+    <meta property="og:url" content="https://jolopami.github.io/mimbra-web/guias/importar-extracto-bancario.html">
+    <meta property="og:image" content="https://jolopami.github.io/mimbra-web/assets/mimbra-social.png">
+    <meta property="article:published_time" content="2026-08-01">
+    <meta property="article:modified_time" content="2026-08-01">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://jolopami.github.io/mimbra-web/guias/importar-extracto-bancario.html">
+    <link rel="icon" href="../assets/mimbra-icono.png" type="image/png">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Cómo importar un extracto bancario en CSV o Excel | Mimbra</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            "headline": "Cómo importar un extracto bancario en CSV o Excel",
+            "description": "Guía paso a paso para descargar, revisar e importar movimientos bancarios sin conectar la cuenta.",
+            "datePublished": "2026-08-01",
+            "dateModified": "2026-08-01",
+            "inLanguage": "es-ES",
+            "mainEntityOfPage": "https://jolopami.github.io/mimbra-web/guias/importar-extracto-bancario.html",
+            "author": {"@type": "Organization", "name": "Mimbra"},
+            "publisher": {
+              "@type": "Organization",
+              "name": "Mimbra",
+              "logo": {"@type": "ImageObject", "url": "https://jolopami.github.io/mimbra-web/assets/mimbra-icono.png"}
+            }
+          },
+          {
+            "@type": "HowTo",
+            "name": "Cómo importar un extracto bancario",
+            "totalTime": "PT10M",
+            "step": [
+              {"@type": "HowToStep", "name": "Descargar el extracto", "text": "Exporta los movimientos desde la web o aplicación de tu banco en CSV o Excel."},
+              {"@type": "HowToStep", "name": "Elegir el periodo", "text": "Usa un intervalo concreto y evita solapar fechas con importaciones anteriores."},
+              {"@type": "HowToStep", "name": "Revisar las columnas", "text": "Comprueba fecha, concepto e importe, o las columnas separadas de cargos y abonos."},
+              {"@type": "HowToStep", "name": "Comprobar los movimientos", "text": "Revisa signos, filas informativas y posibles duplicados antes de confirmar."},
+              {"@type": "HowToStep", "name": "Importar y categorizar", "text": "Guarda los movimientos válidos y asigna categorías a los conceptos relevantes."}
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Mimbra", "item": "https://jolopami.github.io/mimbra-web/"},
+              {"@type": "ListItem", "position": 2, "name": "Guías", "item": "https://jolopami.github.io/mimbra-web/guias/"},
+              {"@type": "ListItem", "position": 3, "name": "Importar un extracto bancario"}
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="Ir al inicio de Mimbra">
+        <img src="../assets/mimbra-icono.png" alt="">
+        <span><strong>Mimbra</strong><small>Tus finanzas, recogidas y en casa</small></span>
+      </a>
+      <a class="back-link" href="index.html">← Todas las guías</a>
+    </header>
+
+    <main>
+      <article>
+        <header class="guide-hero">
+          <p class="eyebrow">Importación bancaria</p>
+          <h1>Cómo importar un extracto bancario en CSV o Excel</h1>
+          <p class="guide-intro">Importar un extracto no debería consistir en aceptar cientos de filas a ciegas. El objetivo es elegir el archivo adecuado, reconocer su estructura y comprobar el resultado antes de incorporarlo a tu historial.</p>
+          <div class="guide-meta"><span>Actualizado el 1 de agosto de 2026</span><span>Lectura: 6 minutos</span></div>
+        </header>
+
+        <div class="guide-content">
+          <p>Un extracto bancario es un archivo con los movimientos de una cuenta durante un periodo. Muchos bancos permiten descargarlo en CSV o Excel, aunque los nombres de las columnas y la forma de expresar los importes pueden variar. Mimbra está pensado para trabajar con esos archivos sin pedir acceso a la cuenta bancaria.</p>
+
+          <h2>Qué formato conviene descargar</h2>
+          <p>Si tu banco ofrece varias opciones, empieza por <strong>CSV</strong> o <strong>XLSX</strong>. CSV es ligero y compatible con casi cualquier programa; XLSX conserva mejor las hojas y algunos formatos. Mimbra también admite TSV, TXT, XLS, XLSM, XLSB, ODS y tablas HTML exportadas por determinadas entidades.</p>
+          <p>Evita el PDF cuando exista una alternativa tabular. Un PDF está diseñado para leerse o imprimirse, no para conservar cada movimiento como una fila claramente identificable.</p>
+
+          <div class="guide-callout"><strong>Consejo:</strong> guarda el archivo original sin modificar. Si necesitas corregir algo, hazlo durante la revisión de la importación y conserva el extracto descargado como referencia.</div>
+
+          <h2>Cómo importar el extracto paso a paso</h2>
+          <ol class="guide-steps">
+            <li><strong>Descarga los movimientos desde tu banco.</strong> Elige la cuenta y un periodo concreto, por ejemplo el mes anterior.</li>
+            <li><strong>Comprueba el intervalo de fechas.</strong> Si ya importaste parte del periodo, Mimbra podrá señalar movimientos repetidos, pero es mejor evitar solapamientos innecesarios.</li>
+            <li><strong>Selecciona el archivo en Mimbra.</strong> El archivo se lee en tu ordenador; no se envía a un servidor ni se utiliza para conectar con el banco.</li>
+            <li><strong>Confirma la correspondencia de columnas.</strong> Identifica fecha, concepto e importe. Algunos bancos separan el dinero en dos columnas llamadas cargo y abono.</li>
+            <li><strong>Revisa la vista previa.</strong> Corrige signos, excluye cabeceras o saldos informativos y comprueba varias filas antes de guardar.</li>
+            <li><strong>Importa solo los movimientos válidos.</strong> Después podrás clasificarlos, crear reglas y consultar el resumen mensual.</li>
+          </ol>
+
+          <h2>Las tres columnas esenciales</h2>
+          <h3>Fecha</h3>
+          <p>Indica cuándo se registró la operación. Algunos extractos incluyen una fecha de operación y otra de valor. Para un control mensual sencillo suele bastar con usar siempre la misma.</p>
+          <h3>Concepto</h3>
+          <p>Es el texto que describe el movimiento: comercio, transferencia, recibo o nómina. Aunque venga lleno de códigos, normalmente contiene alguna palabra estable que después sirve para categorizar operaciones similares.</p>
+          <h3>Importe</h3>
+          <p>Puede aparecer en una sola columna con valores positivos y negativos, o dividido entre cargos y abonos. Antes de confirmar, comprueba que una compra se interpreta como gasto y un ingreso como entrada de dinero.</p>
+
+          <h2>Qué hacer si el archivo viene raro</h2>
+          <p>Es habitual encontrar una primera fila con el nombre de la cuenta, saldos entre los movimientos o números con separadores distintos. No significa que el extracto sea inutilizable. Indica manualmente las columnas correctas, excluye las filas que no representan operaciones y revisa el resultado.</p>
+          <p>Mimbra se ha probado con extractos reales de Openbank, BBVA, SelfBank y WiZink. La importación flexible permite trabajar con otras entidades siempre que el archivo contenga movimientos en filas y datos reconocibles de fecha, concepto e importe.</p>
+
+          <h2>Cómo evitar duplicados</h2>
+          <p>Descarga periodos definidos y utiliza siempre la misma cuenta y formato. Si vuelves a importar un intervalo anterior, revisa los movimientos que Mimbra identifica como repetidos. La comprobación previa evita que una compra aparezca dos veces y distorsione el gasto del mes.</p>
+
+          <div class="guide-callout"><strong>En resumen:</strong> descargar, asignar columnas, revisar y confirmar. La importación debe darte control sobre cada etapa, no obligarte a confiar en una caja negra.</div>
+
+          <section class="guide-next">
+            <h2>Siguiente paso</h2>
+            <div class="guide-next-links">
+              <a href="categorizar-movimientos-bancarios.html">Cómo categorizar movimientos sin perder horas →</a>
+              <a href="organizar-gastos-sin-conectar-banco.html">Cómo organizar tus gastos sin conectar el banco →</a>
+              <a href="../index.html#demo-title">Ver la demostración de Mimbra →</a>
+            </div>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <img src="../assets/mimbra-icono.png" alt="" width="52" height="52">
+      <div><strong>Mimbra</strong><span>Tus finanzas, recogidas y en casa</span></div>
+      <p>© 2026 Mimbra</p>
+      <nav class="footer-links" aria-label="Enlaces del pie">
+        <a href="../index.html">Inicio</a>
+        <a href="index.html">Guías</a>
+        <a href="../privacidad.html">Privacidad</a>
+      </nav>
+    </footer>
+  </body>
+</html>
