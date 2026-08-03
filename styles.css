@@ -377,6 +377,7 @@ img { display: block; max-width: 100%; }
   background: var(--forest-800);
   text-align: center;
 }
+.price .button { width: 100%; margin-top: 16px; }
 .price span, .price strong, .price small { display: block; }
 .price span { color: #bcd1c8; font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; }
 .price strong { margin: 7px 0; font-family: Georgia, "Times New Roman", serif; font-size: 3.5rem; line-height: 1; }
