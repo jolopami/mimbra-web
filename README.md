@@ -10,9 +10,9 @@ La web incluye una demostración de 59 segundos realizada con datos ficticios y 
 
 GitHub Pages publica el contenido de la rama `main` desde la raíz del repositorio.
 
-La web refleja la versión comercial terminada `1.0.0`. El enlace de compra permanecerá pendiente hasta que Lemon Squeezy active la tienda.
+La web refleja la versión comercial publicada `1.0.0` y enlaza el checkout real de Lemon Squeezy.
 
-La primera versión se distribuirá directamente desde Lemon Squeezy sin una firma digital comercial. La landing lo explica antes de la compra y enlaza una guía de instalación específica. La huella SHA-256 se añadirá cuando se genere la compilación comercial definitiva.
+La primera versión se distribuye directamente desde Lemon Squeezy sin una firma digital comercial. La landing lo explica antes de la compra y enlaza una guía de instalación específica con la huella SHA-256 del instalador comercial.
 
 La portada, las páginas de instalación y privacidad y todas las guías incluyen metadatos sociales, URL canónica y datos estructurados de Schema.org. `robots.txt` enlaza el sitemap público enviado a Google Search Console y Bing Webmaster Tools.
 
